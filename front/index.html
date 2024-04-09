@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista_JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body page= "lista">
+    <div id="listaRegistros">
+        <table id="tabela">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Fone</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <div>
+        <button>Salvar</button>
+        <button onclick="vizualizar('lista')" class="cinza" type='button'>Cancelar</button>
+    </div>
+    <div id="cadastroRegistro">
+        <div class="label">
+            <div>ID</div>
+            <div>
+                <input type="number">
+            </div>
+        </div>
+        <div class="label">
+            <div>Nome</div>
+            <div>
+                <input type="text">
+            </div>
+        </div>
+        <div class="label">
+            <div>Numero</div>
+            <div>
+                <input type="tel">
+            </div>
+        </div>
+    
+        <script src="main.js"></script>
+    </div>        
+</body>
+</html>
