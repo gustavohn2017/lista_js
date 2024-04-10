@@ -1,49 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista_JS</title>
-    <link rel="stylesheet" href="style.css">
+    <head>
+        <title>Lista de Contatos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body page= "lista">
-    <div id="listaRegistros">
-        <table id="tabela">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Nome</th>
-                    <th>Fone</th>
-                </tr>
-            </thead>
-            <tbody></tbody>
-        </table>
+<body>
+    <div class="container">
+        <h1 class="text-center">Lista de Contatos</h1>
+        <div id="form-div">
+            <form id="contact-form" class="form-group">
+                <label for="name">Nome:</label><br>
+                <input type="text" id="name" name="name" class="form-control"><br>
+                <label for="phone">Número de celular:</label><br>
+                <input type="text" id="phone" name="phone" class="form-control"><br>
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email" class="form-control"><br>
+                <input type="submit" value="Adicionar Contato" class="btn btn-success">
+            </form>
+        </div>
+        <div id="list-div">
+            <ul id="contacts-list" class="list-group"></ul>
+        </div>
     </div>
-    <div>
-        <button>Salvar</button>
-        <button onclick="vizualizar('lista')" class="cinza" type='button'>Cancelar</button>
-    </div>
-    <div id="cadastroRegistro">
-        <div class="label">
-            <div>ID</div>
-            <div>
-                <input type="number">
-            </div>
-        </div>
-        <div class="label">
-            <div>Nome</div>
-            <div>
-                <input type="text">
-            </div>
-        </div>
-        <div class="label">
-            <div>Numero</div>
-            <div>
-                <input type="tel">
-            </div>
-        </div>
-    
-        <script src="main.js"></script>
-    </div>        
+    <script src="script.js"></script>
 </body>
 </html>
